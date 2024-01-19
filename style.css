@@ -29,6 +29,7 @@ body {
 .header-items {
     display: flex;
     gap: 15px;
+    font-size: 17px;
 }
 
 a {
@@ -64,7 +65,6 @@ a {
     background-color: blue;
     color: white;
     border: none;
-    border-radius: 2px;
     width: 100px;
     min-height: 40px;
     border-radius: 10px;
@@ -72,11 +72,17 @@ a {
 
 .img {
     background-color: rgba(240, 255, 255, 0.406);
-    min-width: 500px;
-    min-height: 250px;
+    max-width: 550px;
+    max-height: 350px;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
 }
 
 /* Container-two */
@@ -112,12 +118,21 @@ a {
 .item {
     border: 4px solid #3882f6;
     border-radius: 15px;
-    min-height: 180px;   
-    min-width: 180px;
+    min-width: 180px;   
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    display: flex;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 .img-text p {
-    width: 120px;
+    width: 180px;
     text-align: center;
     margin-top: 0;
 }
@@ -129,14 +144,80 @@ a {
     align-items: center;
     background-color: #e5e7eb;
     padding: 70px 100px;
+    flex-direction: column;
 }
 
-.container-three p{
+.container-three .quote{
     max-width: 700px;
     font-size: 35px;
     font-style: italic;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
+.container-three .quote span {
+    font-size: 23px;
+    font-weight:650;
+    font-style: normal;
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 40px;
+}
 
+/* Container-four */
+.container-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+    color: white;
+}
+
+.container-four .subcontainer {
+    background-color: #3882f6;
+    width: 900px;
+    height: 130px;
+    display: flex;
+    padding: 10px 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text-four {
+    font-size: 18px;
+}
+
+.text-four h2{
+    margin: 0;
+    padding: 0;
+}
+.text-four p {
+    margin: 0;
+}
+
+.container-four .subcontainer button {
+    background-color: #3882f6;
+    border: 2px white solid;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 100px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+}
 
 
